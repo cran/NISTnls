@@ -1,4 +1,4 @@
-%%% $Id: Ratkowsky3.Rd,v 1.1 1999/05/27 16:07:58 bates Exp $
+%%% $Id: Ratkowsky3.Rd,v 1.1 1999/10/13 00:50:08 saikat Exp $
 \name{Ratkowsky3}
 \alias{Ratkowsky3}
 \non_function{}
@@ -32,18 +32,20 @@ New York, NY:  Marcel Dekker, pp. 62 and 88.
 library(NISTnls)
 data(Ratkowsky3)
 plot(y ~ x, data = Ratkowsky3)
+\dontrun{
 ## causes NA/NaN/Inf error
-#fm1 <- nls(y ~ b1 / ((1+exp(b2-b3*x))**(1/b4)), data = Ratkowsky3,
-#           start = c(b1 = 100, b2 = 10, b3 = 1, b4 = 1),
-#           warnOnly = TRUE, trace = TRUE)
+fm1 <- nls(y ~ b1 / ((1+exp(b2-b3*x))**(1/b4)), data = Ratkowsky3,
+           start = c(b1 = 100, b2 = 10, b3 = 1, b4 = 1),
+           trace = TRUE)
+}
 fm2 <- nls(y ~ b1 / ((1+exp(b2-b3*x))**(1/b4)), data = Ratkowsky3,
            start = c(b1 = 700, b2 = 5, b3 = 0.75, b4 = 1.3),
-           warnOnly = TRUE, trace = TRUE)
+           trace = TRUE)
 fm3 <- nls(y ~ 1 / ((1+exp(b2-b3*x))**(1/b4)), data = Ratkowsky3,
            start = c(b2 = 10, b3 = 1, b4 = 1), algorithm = "plinear",
-           warnOnly = TRUE, trace = TRUE)
+           trace = TRUE) 
 fm4 <- nls(y ~ 1 / ((1+exp(b2-b3*x))**(1/b4)), data = Ratkowsky3,
            start = c(b2 = 5, b3 = 0.75, b4 = 1.3), algorithm = "plinear",
-           warnOnly = TRUE, trace = TRUE)
+           trace = TRUE)
 }
 \keyword{datasets}

@@ -1,4 +1,4 @@
-%%% $Id: MGH09.Rd,v 1.1 1999/05/27 16:07:58 bates Exp $
+%%% $Id: MGH09.Rd,v 1.1 1999/10/13 00:50:08 saikat Exp $
 \name{MGH09}
 \alias{MGH09}
 \non_function{}
@@ -37,21 +37,20 @@ New York, NY:  Elsevier North-Holland.
 library(NISTnls)
 data(MGH09)
 plot(y ~ x, data = MGH09)
+\dontrun{
 ## starting values for this attempt are ridiculous
 fm1 <- nls(y ~ b1*(x**2+x*b2) / (x**2+x*b3+b4),
            data = MGH09, trace = TRUE,
-           start = c(b1 = 25, b2 = 39, b3 = 41.5, b4 = 39),
-           warnOnly = TRUE)
+           start = c(b1 = 25, b2 = 39, b3 = 41.5, b4 = 39))
+}
 fm2 <- nls(y ~ b1*(x**2+x*b2) / (x**2+x*b3+b4),
            data = MGH09, trace = TRUE,
            start = c(b1 = 0.25, b2 = 0.39, b3 = 0.415, b4 = 0.39))
 fm3 <- nls(y ~ cbind(x, x**2) / (x**2+x*b3+b4),
            data = MGH09, trace = TRUE, algorithm = "plinear",
-           start = c(b3 = 41.5, b4 = 39),
-           warnOnly = TRUE)
+           start = c(b3 = 41.5, b4 = 39))
 fm4 <- nls(y ~ cbind(x, x**2) / (x**2+x*b3+b4),
            data = MGH09, trace = TRUE, algorithm = "plinear",
-           start = c(b3 = 0.415, b4 = 0.39),
-           warnOnly = TRUE)
+           start = c(b3 = 0.415, b4 = 0.39))
 }
 \keyword{datasets}

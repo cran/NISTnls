@@ -1,4 +1,4 @@
-%%% $Id: Lanczos3.Rd,v 1.1 1999/05/27 16:07:58 bates Exp $
+%%% $Id: Lanczos3.Rd,v 1.1 1999/10/13 00:50:08 saikat Exp $
 \name{Lanczos3}
 \alias{Lanczos3}
 \non_function{}
@@ -34,23 +34,23 @@ data(Lanczos3)
 plot(y ~ x, data = Lanczos3)
 ## plot log response to see the number of exponential terms
 plot(y ~ x, data = Lanczos3, log = "y")
+\dontrun{
 ## Numerical derivatives do not produce sufficient accuracy to converge
 fm1 <- nls(y ~ b1*exp(-b2*x) + b3*exp(-b4*x) + b5*exp(-b6*x),
            data = Lanczos3, trace = TRUE,
            start = c(b1 = 1.2, b2 = 0.3, b3 = 5.6, b4 = 5.5,
-                     b5 = 6.5, b6 = 7.6), warnOnly = TRUE)
+                     b5 = 6.5, b6 = 7.6))
 fm2 <- nls(y ~ b1*exp(-b2*x) + b3*exp(-b4*x) + b5*exp(-b6*x),
            data = Lanczos3, trace = TRUE,
            start = c(b1 = 0.5, b2 = 0.7, b3 = 3.6, b4 = 4.2,
-                     b5 = 4, b6 = 6.3), warnOnly = TRUE)
+                     b5 = 4, b6 = 6.3))
 fm3 <- nls(y ~ exp(outer(x,-c(b2, b4, b6))),
            data = Lanczos3, trace = TRUE, algorithm = "plinear",
-           start = c(b2 = 0.3, b4 = 5.5, b6 = 7.6),
-           warnOnly = TRUE)
+           start = c(b2 = 0.3, b4 = 5.5, b6 = 7.6))
 fm4 <- nls(y ~ exp(outer(x,-c(b2, b4, b6))),
            data = Lanczos3, trace = TRUE, algorithm = "plinear",
-           start = c(b2 = 0.7, b4 = 4.2, b6 = 6.3),
-           warnOnly = TRUE)
+           start = c(b2 = 0.7, b4 = 4.2, b6 = 6.3))
+}
 ## Use analytic derivatives
 Lanczos <- deriv(~ b1*exp(-b2*x) + b3*exp(-b4*x) + b5*exp(-b6*x),
                  paste("b", 1:6, sep = ""),
@@ -58,10 +58,10 @@ Lanczos <- deriv(~ b1*exp(-b2*x) + b3*exp(-b4*x) + b5*exp(-b6*x),
 fm5 <- nls(y ~ Lanczos(x, b1, b2, b3, b4, b5, b6),
            data = Lanczos3, trace = TRUE,
            start = c(b1 = 1.2, b2 = 0.3, b3 = 5.6, b4 = 5.5,
-                     b5 = 6.5, b6 = 7.6), warnOnly = TRUE)
+                     b5 = 6.5, b6 = 7.6))
 fm6 <- nls(y ~ Lanczos(x, b1, b2, b3, b4, b5, b6),
            data = Lanczos3, trace = TRUE,
            start = c(b1 = 0.5, b2 = 0.7, b3 = 3.6, b4 = 4.2,
-                     b5 = 4, b6 = 6.3), warnOnly = TRUE)
+                     b5 = 4, b6 = 6.3))
 }
 \keyword{datasets}

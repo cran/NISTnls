@@ -1,4 +1,4 @@
-%%% $Id: Nelson.Rd,v 1.1 1999/05/27 16:07:58 bates Exp $
+%%% $Id: Nelson.Rd,v 1.1 1999/10/13 00:50:08 saikat Exp $
 \name{Nelson}
 \alias{Nelson}
 \non_function{}
@@ -43,16 +43,17 @@ plot(y ~ x1, data = Nelson, log = "y")
 plot(y ~ x2, data = Nelson, log = "y")
 coplot(y ~ x1 | x2, data = Nelson)
 coplot(y ~ x2 | x1, data = Nelson)
+\dontrun{
 fm1 <- nls(log(y) ~ b1 - b2*x1 * exp(-b3*x2), data = Nelson,
-           start = c(b1 = 2, b2 = 0.0001, b3 = -0.01), trace = TRUE,
-           warnOnly = TRUE)
+           start = c(b1 = 2, b2 = 0.0001, b3 = -0.01), trace = TRUE)
+}
 fm2 <- nls(log(y) ~ b1 - b2*x1 * exp(-b3*x2), data = Nelson,
            start = c(b1 = 2.5, b2 = 0.000000005, b3 = -0.05), trace = TRUE)
-#fm3 <- nls(log(y) ~ cbind(1, -x1 * exp(-b3*x2)), data = Nelson,
-#           start = c(b3 = -0.01), trace = TRUE, algorithm = "plinear",
-#           warnOnly = TRUE)
-#fm4 <- nls(log(y) ~ cbind(1, -x1 * exp(-b3*x2)), data = Nelson,
-#           start = c(b3 = -0.05), trace = TRUE, algorithm = "plinear",
-#           warnOnly = TRUE)
+\dontrun{
+fm3 <- nls(log(y) ~ cbind(1, -x1 * exp(-b3*x2)), data = Nelson,
+           start = c(b3 = -0.01), trace = TRUE, algorithm = "plinear")
+}
+fm4 <- nls(log(y) ~ cbind(1, -x1 * exp(-b3*x2)), data = Nelson,
+           start = c(b3 = -0.05), trace = TRUE, algorithm = "plinear")
 }
 \keyword{datasets}

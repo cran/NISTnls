@@ -1,4 +1,4 @@
-%%% $Id: Misra1a.Rd,v 1.1 1999/05/27 16:07:58 bates Exp $
+%%% $Id: Misra1a.Rd,v 1.1 1999/10/13 00:50:08 saikat Exp $
 \name{Misra1a}
 \alias{Misra1a}
 \non_function{}

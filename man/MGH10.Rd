@@ -1,4 +1,4 @@
-%%% $Id: MGH10.Rd,v 1.1 1999/05/27 16:07:58 bates Exp $
+%%% $Id: MGH10.Rd,v 1.1 1999/10/13 00:50:08 saikat Exp $
 \name{MGH10}
 \alias{MGH10}
 \non_function{}
@@ -39,19 +39,21 @@ data(MGH10)
 plot(y ~ x, data = MGH10)
 ## check plot on log scale for shape
 plot(y ~ x, data = MGH10, log = "y")
+\dontrun{
 ## starting values for this run are ridiculous
 fm1 <- nls(y ~ b1 * exp(b2/(x+b3)), data = MGH10, trace = TRUE,
-           start = c(b1 = 2, b2 = 400000, b3 = 25000),
-           warnOnly = TRUE)
+           start = c(b1 = 2, b2 = 400000, b3 = 25000))
+}
 fm2 <- nls(y ~ b1 * exp(b2/(x+b3)), data = MGH10, trace = TRUE,
-           start = c(b1 = 0.02, b2 = 4000, b3 = 250),
-           warnOnly = TRUE)
+           start = c(b1 = 0.02, b2 = 4000, b3 = 250))
+\dontrun{
 fm3 <- nls(y ~ exp(b2/(x+b3)), data = MGH10, trace = TRUE,
            start = c(b2 = 400000, b3 = 25000),
-           warnOnly = TRUE, algorithm = "plinear")
+           algorithm = "plinear")
+}
 fm4 <- nls(y ~ exp(b2/(x+b3)), data = MGH10, trace = TRUE,
            start = c(b2 = 4000, b3 = 250),
-           warnOnly = TRUE, algorithm = "plinear")
+           algorithm = "plinear")
 }
 \author{}
 \keyword{datasets}

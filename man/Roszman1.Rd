@@ -1,4 +1,4 @@
-%%% $Id: Roszman1.Rd,v 1.1 1999/05/27 16:07:58 bates Exp $
+%%% $Id: Roszman1.Rd,v 1.1 1999/10/13 00:50:08 saikat Exp $
 \name{Roszman1}
 \alias{Roszman1}
 \non_function{}
@@ -35,9 +35,9 @@ data(Roszman1)
 plot(y ~ x, data = Roszman1)
 fm1 <- nls(y ~ b1 - b2*x - atan(b3/(x-b4))/pi, data = Roszman1,
            start = c(b1 = 0.1, b2 = -0.00001, b3 = 1000, b4 = -100),
-           trace = TRUE, warnOnly = TRUE)
+           trace = TRUE)
 fm2 <- nls(y ~ b1 - b2*x - atan(b3/(x-b4))/pi, data = Roszman1,
            start = c(b1 = 0.2, b2 = -0.0000015, b3 = 1200, b4 = -150),
-           trace = TRUE, warnOnly = TRUE)
+           trace = TRUE)
 }
 \keyword{datasets}

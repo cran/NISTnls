@@ -1,4 +1,4 @@
-%%% $Id: Gauss3.Rd,v 1.1 1999/05/27 16:07:58 bates Exp $
+%%% $Id: Gauss3.Rd,v 1.1 1999/10/13 00:50:08 saikat Exp $
 \name{Gauss3}
 \alias{Gauss3}
 \non_function{}

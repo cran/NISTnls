@@ -1,10 +1,9 @@
-### $Id: zzz.R,v 1.1 1999/05/27 16:07:57 bates Exp $
+### $Id: zzz.R,v 1.2 1999/10/21 22:35:58 bates Exp $
 ###
 ###            Nonlinear least squares for R
 ###
 ### Copyright 1999-1999 Saikat DebRoy <saikat@stat.wisc.edu>,
-###                     Douglas M. Bates <bates@stat.wisc.edu>,
-###                     Jose C. Pinheiro <jcp@research.bell-labs.com>
+###                     Douglas M. Bates <bates@stat.wisc.edu>
 ###
 ### This file is part of the NISTnls library for R and related languages.
 ### It is made available under the terms of the GNU General Public
