@@ -1,0 +1,47 @@
+%%% $Id: Ratkowsky2.Rd,v 1.2 1999/06/01 21:38:49 bates Exp $
+\name{Ratkowsky2}
+\alias{Ratkowsky2}
+\non_function{}
+\title{Pasture yield data}
+\description{
+The \code{Ratkowsky2} data frame has 9 rows and 2 columns.
+}
+\format{
+This data frame contains the following columns:
+}
+\arguments{
+    \item{y}{
+	A numeric vector of pasture yields.
+    }
+    \item{x}{
+	A numeric vector of growing times.
+    }
+}
+\details{
+This model and data are an example of fitting
+sigmoidal growth curves taken from Ratkowsky (1983).
+The response variable is pasture yield, and the
+predictor variable is growing time.
+}
+\source{
+Ratkowsky, D.A. (1983).  
+Nonlinear Regression Modeling.
+New York, NY:  Marcel Dekker, pp. 61 and 88.
+}
+\examples{
+library(NISTnls)
+data(Ratkowsky2)
+plot(y ~ x, data = Ratkowsky2)
+fm1 <- nls(y ~ b1 / (1+exp(b2-b3*x)), data = Ratkowsky2, trace = TRUE,
+           start = c(b1 = 100, b2 = 1, b3 = 0.1), warnOnly = TRUE)
+fm2 <- nls(y ~ b1 / (1+exp(b2-b3*x)), data = Ratkowsky2, trace = TRUE,
+           start = c(b1 = 75, b2 = 2.5, b3 = 0.07), warnOnly = TRUE)
+fm3 <- nls(y ~ 1 / (1+exp(b2-b3*x)), data = Ratkowsky2, trace = TRUE,
+           start = c(b2 = 1, b3 = 0.1), warnOnly = TRUE, alg = "plinear")
+fm4 <- nls(y ~ 1 / (1+exp(b2-b3*x)), data = Ratkowsky2, trace = TRUE,
+           start = c(b2 = 2.5, b3 = 0.07), warnOnly = TRUE, alg = "plinear")
+## Using a self-starting model
+fm5 <- nls(y ~ SSlogis(x, Asym, xmid, scal), data = Ratkowsky2)
+fm5
+}         
+\keyword{datasets}

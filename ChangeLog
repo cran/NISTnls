@@ -1,0 +1,7 @@
+1999-05-27  Douglas Bates  <bates@stat.wisc.edu>
+
+	* DESCRIPTION (Package): Created the files for the 0.9 release.
+	No summary calls yet as summary.nls does not exist in the nls
+	package.
+	
+
