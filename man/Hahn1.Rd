@@ -1,4 +1,4 @@
-%%% $Id: Hahn1.Rd,v 1.1 1999/10/13 00:50:08 saikat Exp $
+%%% $Id: Hahn1.Rd,v 1.2 2001/01/10 17:49:12 bates Exp $
 \name{Hahn1}
 \alias{Hahn1}
 \non_function{}
@@ -29,7 +29,6 @@ Hahn, T., NIST (197?).
 Copper Thermal Expansion Study.
 }
 \examples{
-library(NISTnls)
 data(Hahn1)
 plot(y ~ x, data = Hahn1)
 fm1 <- nls(y ~ (b1+b2*x+b3*x**2+b4*x**3) / (1+b5*x+b6*x**2+b7*x**3),

@@ -1,4 +1,4 @@
-%%% $Id: Bennett5.Rd,v 1.1 1999/10/13 00:50:08 saikat Exp $
+%%% $Id: Bennett5.Rd,v 1.2 2001/01/10 17:49:12 bates Exp $
 \name{Bennett5}
 \alias{Bennett5}
 \non_function{}
@@ -29,16 +29,17 @@ NIST (1994).
 Superconductivity Magnetization Modeling.
 }
 \examples{
-library(NISTnls)
 data(Bennett5)
 plot(y ~ x, data = Bennett5)
+\dontrun{
 fm1 <- nls(y ~ b1*(b2+x)**(-1/b3), data = Bennett5,
            start = c(b1 = -2000, b2 = 50, b3 = 0.8), trace = TRUE)
+}
 fm2 <- nls(y ~ b1*(b2+x)**(-1/b3), data = Bennett5,
            start = c(b1 = -1500, b2 = 45, b3 = 0.85), trace = TRUE)
 fm3 <- nls(y ~ (b2+x)**(-1/b3), data = Bennett5, alg = "plinear",
            start = c( b2 = 50, b3 = 0.8), trace = TRUE)
 fm4 <- nls(y ~ (b2+x)**(-1/b3), data = Bennett5, alg = "plinear",
-           start = c( b2 = 50, b3 = 0.8), trace = TRUE)
+           start = c( b2 = 45, b3 = 0.8), trace = TRUE)
 }
 \keyword{datasets}

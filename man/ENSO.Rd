@@ -1,4 +1,4 @@
-%%% $Id: ENSO.Rd,v 1.1 1999/10/13 00:50:08 saikat Exp $
+%%% $Id: ENSO.Rd,v 1.2 2001/01/10 17:49:12 bates Exp $
 \name{ENSO}
 \alias{ENSO}
 \non_function{}
@@ -36,7 +36,6 @@ Numerical Methods and Software.
 Englewood Cliffs, NJ: Prentice Hall, pp. 441-445.
 }
 \examples{
-library(NISTnls)
 data(ENSO)
 plot(y ~ x, data = ENSO)
 plot(y ~ x, data = ENSO, type = "l")  # to see the pattern more clearly

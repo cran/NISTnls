@@ -1,4 +1,4 @@
-%%% $Id: MGH10.Rd,v 1.1 1999/10/13 00:50:08 saikat Exp $
+%%% $Id: MGH10.Rd,v 1.3 2001/01/10 17:49:12 bates Exp $
 \name{MGH10}
 \alias{MGH10}
 \non_function{}
@@ -34,7 +34,6 @@ Mangasarian and Ritter (Eds).
 New York, NY: Academic Press, pp. 465-486.
 }
 \examples{
-library(NISTnls)
 data(MGH10)
 plot(y ~ x, data = MGH10)
 ## check plot on log scale for shape

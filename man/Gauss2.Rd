@@ -1,4 +1,4 @@
-%%% $Id: Gauss2.Rd,v 1.1 1999/10/13 00:50:08 saikat Exp $
+%%% $Id: Gauss2.Rd,v 1.2 2001/01/10 17:49:12 bates Exp $
 \name{Gauss2}
 \alias{Gauss2}
 \non_function{}
@@ -26,7 +26,6 @@ This data frame contains the following columns:
     Rust, B., NIST (1996)
 }
 \examples{
-library(NISTnls)
 data(Gauss2)
 plot(y ~ x, data = Gauss2)
 fm1 <- nls(y ~ b1*exp( -b2*x ) + b3*exp( -(x-b4)**2 / b5**2 )

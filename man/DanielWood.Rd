@@ -1,4 +1,4 @@
-%%% $Id: DanielWood.Rd,v 1.1 1999/10/13 00:50:08 saikat Exp $
+%%% $Id: DanielWood.Rd,v 1.2 2001/01/10 17:49:12 bates Exp $
 \name{DanielWood}
 \alias{DanielWood}
 \non_function{}
@@ -36,7 +36,6 @@ Fitting Equations to Data, Second Edition.
 New York, NY:  John Wiley and Sons, pp. 428-431.
 }
 \examples{
-library(NISTnls)
 data(DanielWood)
 plot(y ~ x, data = DanielWood)
 fm1 <- nls(y ~ b1*x**b2, data = DanielWood, trace = TRUE,

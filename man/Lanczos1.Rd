@@ -1,4 +1,4 @@
-%%% $Id: Lanczos1.Rd,v 1.1 1999/10/13 00:50:08 saikat Exp $
+%%% $Id: Lanczos1.Rd,v 1.3 2001/01/10 17:49:12 bates Exp $
 \name{Lanczos1}
 \alias{Lanczos1}
 \non_function{}
@@ -30,7 +30,6 @@ of accuracy using
     Englewood Cliffs, NJ:  Prentice Hall, pp. 272-280.
 }
 \examples{
-library(NISTnls)
 data(Lanczos1)
 plot(y ~ x, data = Lanczos1)
 ## plot on log scaleto see the apparent number of exponential terms

@@ -1,4 +1,4 @@
-%%% $Id: Roszman1.Rd,v 1.1 1999/10/13 00:50:08 saikat Exp $
+%%% $Id: Roszman1.Rd,v 1.3 2001/01/10 17:49:12 bates Exp $
 \name{Roszman1}
 \alias{Roszman1}
 \non_function{}
@@ -30,7 +30,6 @@ Roszman, L., NIST (19??).
 Quantum Defects for Sulfur I Atom.
 }
 \examples{
-library(NISTnls)
 data(Roszman1)
 plot(y ~ x, data = Roszman1)
 fm1 <- nls(y ~ b1 - b2*x - atan(b3/(x-b4))/pi, data = Roszman1,

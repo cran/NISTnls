@@ -1,4 +1,4 @@
-%%% $Id: Ratkowsky3.Rd,v 1.1 1999/10/13 00:50:08 saikat Exp $
+%%% $Id: Ratkowsky3.Rd,v 1.3 2001/01/10 17:49:12 bates Exp $
 \name{Ratkowsky3}
 \alias{Ratkowsky3}
 \non_function{}
@@ -29,7 +29,6 @@ Nonlinear Regression Modeling.
 New York, NY:  Marcel Dekker, pp. 62 and 88.
 }
 \examples{
-library(NISTnls)
 data(Ratkowsky3)
 plot(y ~ x, data = Ratkowsky3)
 \dontrun{

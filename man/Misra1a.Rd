@@ -1,4 +1,4 @@
-%%% $Id: Misra1a.Rd,v 1.1 1999/10/13 00:50:08 saikat Exp $
+%%% $Id: Misra1a.Rd,v 1.2 2001/01/10 17:49:12 bates Exp $
 \name{Misra1a}
 \alias{Misra1a}
 \non_function{}
@@ -28,7 +28,6 @@ Misra, D., NIST (1978).
 Dental Research Monomolecular Adsorption Study.
 }
 \examples{
-library(NISTnls)
 data(Misra1a)
 plot(y ~ x, data = Misra1a)
 fm1 <- nls(y ~ b1*(1-exp(-b2*x)), data = Misra1a, trace = TRUE,

@@ -1,4 +1,4 @@
-%%% $Id: MGH17.Rd,v 1.1 1999/10/13 00:50:08 saikat Exp $
+%%% $Id: MGH17.Rd,v 1.3 2001/01/10 17:49:12 bates Exp $
 \name{MGH17}
 \alias{MGH17}
 \non_function{}
@@ -34,7 +34,6 @@ Optimization, Lootsma (Ed).
 New York, NY:  Academic Press, pp. 171-189.
  }
 \examples{
-library(NISTnls)
 data(MGH17)
 plot(y ~ x, data = MGH17)
 \dontrun{

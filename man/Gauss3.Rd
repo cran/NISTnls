@@ -1,4 +1,4 @@
-%%% $Id: Gauss3.Rd,v 1.1 1999/10/13 00:50:08 saikat Exp $
+%%% $Id: Gauss3.Rd,v 1.2 2001/01/10 17:49:12 bates Exp $
 \name{Gauss3}
 \alias{Gauss3}
 \non_function{}
@@ -27,7 +27,6 @@ distributed zero-mean noise with variance = 6.25.
 Rust, B., NIST (1996).
 }
 \examples{
-library(NISTnls)
 data(Gauss3)
 plot(y ~ x, data = Gauss3)
 fm1 <- nls(y ~ b1*exp( -b2*x ) + b3*exp( -(x-b4)**2 / b5**2 )

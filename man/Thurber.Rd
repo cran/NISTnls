@@ -1,4 +1,4 @@
-%%% $Id: Thurber.Rd,v 1.1 1999/10/13 00:50:08 saikat Exp $
+%%% $Id: Thurber.Rd,v 1.3 2001/01/10 17:49:12 bates Exp $
 \name{Thurber}
 \alias{Thurber}
 \non_function{}
@@ -28,7 +28,6 @@ Thurber, R., NIST (197?).
 Semiconductor electron mobility modeling.
 }
 \examples{
-library(NISTnls)
 data(Thurber)
 plot(y ~ x, data = Thurber)
 fm1 <- nls(y ~ (b1+x*(b2+x*(b3+b4*x))) / (1+x*(b5+x*(b6+x*b7))),

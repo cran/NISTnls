@@ -1,4 +1,4 @@
-%%% $Id: Chwirut2.Rd,v 1.1 1999/10/13 00:50:08 saikat Exp $
+%%% $Id: Chwirut2.Rd,v 1.2 2001/01/10 17:49:12 bates Exp $
 \name{Chwirut2}
 \alias{Chwirut2}
 \non_function{}
@@ -28,7 +28,6 @@ metal distance.
     Ultrasonic Reference Block Study. 
 }
 \examples{
-library(NISTnls)
 data(Chwirut2)
 plot(y ~ x, data = Chwirut2)
 fm1 <- nls(y ~ exp(-b1*x)/(b2+b3*x), data = Chwirut2, trace = TRUE,

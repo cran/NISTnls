@@ -1,4 +1,4 @@
-%%% $Id: MGH09.Rd,v 1.1 1999/10/13 00:50:08 saikat Exp $
+%%% $Id: MGH09.Rd,v 1.3 2001/01/10 17:49:12 bates Exp $
 \name{MGH09}
 \alias{MGH09}
 \non_function{}
@@ -34,7 +34,6 @@ Methods for Unconstrained Optimization Problems.
 New York, NY:  Elsevier North-Holland.
 }
 \examples{
-library(NISTnls)
 data(MGH09)
 plot(y ~ x, data = MGH09)
 \dontrun{

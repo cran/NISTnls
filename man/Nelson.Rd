@@ -1,4 +1,4 @@
-%%% $Id: Nelson.Rd,v 1.1 1999/10/13 00:50:08 saikat Exp $
+%%% $Id: Nelson.Rd,v 1.3 2001/01/10 17:49:12 bates Exp $
 \name{Nelson}
 \alias{Nelson}
 \non_function{}
@@ -37,7 +37,6 @@ IEEE Transactions on Reliability.
 Vol. 2, R-30, No. 2, pp. 149-155.
 }
 \examples{
-library(NISTnls)
 data(Nelson)
 plot(y ~ x1, data = Nelson, log = "y")
 plot(y ~ x2, data = Nelson, log = "y")

@@ -1,4 +1,4 @@
-%%% $Id: Eckerle4.Rd,v 1.1 1999/10/13 00:50:08 saikat Exp $
+%%% $Id: Eckerle4.Rd,v 1.3 2001/01/10 17:49:12 bates Exp $
 \name{Eckerle4}
 \alias{Eckerle4}
 \non_function{}
@@ -29,7 +29,6 @@ Eckerle, K., NIST (197?).
 Circular Interference Transmittance Study.
 }
 \examples{
-library(NISTnls)
 data(Eckerle4)
 plot(y ~ x, data = Eckerle4)
 \dontrun{
