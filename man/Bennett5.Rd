@@ -1,4 +1,4 @@
-%%% $Id: Bennett5.Rd,v 1.3 2001/01/12 05:07:37 bates Exp $
+%%% $Id: Bennett5.Rd,v 1.4 2003/07/22 19:42:20 bates Exp $
 \name{Bennett5}
 \alias{Bennett5}
 \non_function{}

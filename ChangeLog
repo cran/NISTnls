@@ -1,6 +1,13 @@
+2004-04-18  Douglas Bates  <bates@stat.wisc.edu>
+
+	* DESCRIPTION (Depends): Release 0.9-8, change dependencies
+
+	* R/zzz.R: Change require(nls) to require(stats) for R >= 1.9.0
+
 2003-07-22  Douglas Bates  <bates@stat.wisc.edu>
 
-	* man/Gauss1.Rd: Changed use of the \argument macro to \describe.
+	* man/Gauss1.Rd: Changed use of the \argument macro to \describe
+	in this and all the other documentation files.
 
 2001-01-10  Douglas Bates  <bates@stat.wisc.edu>
 
