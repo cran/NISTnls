@@ -8,22 +8,23 @@ The \code{Hahn1} data frame has 236 rows and 2 columns of data from a
 study on the thermal expansion of copper.
 }
 \format{
-This data frame contains the following columns:
-}
-\arguments{
+  This data frame contains the following columns:
+  \describe{
     \item{y}{
-	A numeric vector of values of the coefficient of thermal expansion.
+      A numeric vector of values of the coefficient of thermal expansion.
     }
     \item{x}{
-	A numeric vector of temperatures (K).
+      A numeric vector of temperatures (K).
     }
+  }
 }
 \details{
-These data are the result of a NIST study involving
-the thermal expansion of copper.  The response 
-variable is the coefficient of thermal expansion, and
-the predictor variable is temperature in degrees 
-Kelvin.}
+  These data are the result of a NIST study involving
+  the thermal expansion of copper.  The response 
+  variable is the coefficient of thermal expansion, and
+  the predictor variable is temperature in degrees 
+  Kelvin.
+}
 \source{
 Hahn, T., NIST (197?). 
 Copper Thermal Expansion Study.

@@ -8,20 +8,20 @@ The \code{Gauss3} data frame has 250 rows and 2 columns giving generated
 data of Gaussian peaks with a decaying exponential background.
 }
 \format{
-This data frame contains the following columns:
-}
-\arguments{
+  This data frame contains the following columns:
+  \describe{
     \item{y}{
-	A numeric vector of generated responses.
+      A numeric vector of generated responses.
     }
     \item{x}{
-	A numeric vector of generated inputs.
+      A numeric vector of generated inputs.
     }
+  }
 }
 \details{
-The data are two strongly-blended Gaussians on a 
-decaying exponential baseline plus normally 
-distributed zero-mean noise with variance = 6.25.
+  The data are two strongly-blended Gaussians on a 
+  decaying exponential baseline plus normally 
+  distributed zero-mean noise with variance = 6.25.
 }
 \source{
 Rust, B., NIST (1996).

@@ -1,32 +1,32 @@
-%%% $Id: Bennett5.Rd,v 1.2 2001/01/10 17:49:12 bates Exp $
+%%% $Id: Bennett5.Rd,v 1.3 2001/01/12 05:07:37 bates Exp $
 \name{Bennett5}
 \alias{Bennett5}
 \non_function{}
 \title{Magentization modelling}
 \description{
-The \code{Bennett5} data frame has 154 rows and 2 columns of data from a
-magnetism study
+  The \code{Bennett5} data frame has 154 rows and 2 columns of data from a
+  magnetism study
 }
 \format{
-This data frame contains the following columns:
-}
-\arguments{
+  This data frame contains the following columns:
+  \describe{
     \item{y}{
-	A numeric vector of magnetism values.
+      A numeric vector of magnetism values.
     }
     \item{x}{
-	A numeric vector of log(time).
+      A numeric vector of log(time).
     }
+  }
 }
 \details{
-These data are the result of a NIST study involving superconductivity
-magnetization modeling.  The response variable is magnetism, and the
-predictor variable is the log of time in minutes.
+  These data are the result of a NIST study involving superconductivity
+  magnetization modeling.  The response variable is magnetism, and the
+  predictor variable is the log of time in minutes.
 }
 \source{
-Bennett, L., L. Swartzendruber, and H. Brown, 
-NIST (1994).  
-Superconductivity Magnetization Modeling.
+  Bennett, L., L. Swartzendruber, and H. Brown, 
+  NIST (1994).  
+  Superconductivity Magnetization Modeling.
 }
 \examples{
 data(Bennett5)

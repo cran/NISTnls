@@ -8,21 +8,21 @@ The \code{Lanczos1} data frame has 24 rows and 2 columns of generated
 data.
 }
 \format{
-This data frame contains the following columns:
-}
-\arguments{
+  This data frame contains the following columns:
+  \describe{
     \item{y}{
-	A numeric vector of generated responses.
+      A numeric vector of generated responses.
     }
     \item{x}{
-	A numeric vector of generated input values
+      A numeric vector of generated input values
     }
+  }
 }
 \details{
-These data are taken from an example discussed in
-Lanczos (1956).  The data were generated to 14-digits
-of accuracy using
-\code{f(x) = 0.0951*exp(-x) + 0.8607*exp(-3*x) + 1.5576*exp(-5*x)}.
+  These data are taken from an example discussed in
+  Lanczos (1956).  The data were generated to 14-digits
+  of accuracy using
+  \code{f(x) = 0.0951*exp(-x) + 0.8607*exp(-3*x) + 1.5576*exp(-5*x)}.
 }
 \source{
     Lanczos, C. (1956).

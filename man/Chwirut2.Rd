@@ -7,24 +7,24 @@
 The \code{Chwirut2} data frame has nr rows and nc columns giving
 }
 \format{
-This data frame contains the following columns:
-}
-\arguments{
+  This data frame contains the following columns:
+  \describe{
     \item{y}{
-	A numeric vector of ultrasonic response values.
+      A numeric vector of ultrasonic response values.
     }
     \item{x}{
-	A numeric vector of metal distance values.
+      A numeric vector of metal distance values.
     }
+  }
 }
 \details{
-These data are the result of a NIST study involving
-ultrasonic calibration.  The response variable is
-ultrasonic response, and the predictor variable is
-metal distance.
+  These data are the result of a NIST study involving
+  ultrasonic calibration.  The response variable is
+  ultrasonic response, and the predictor variable is
+  metal distance.
 }
 \source{
-    Chwirut, D., NIST (197?).  
+  Chwirut, D., NIST (197?).  
     Ultrasonic Reference Block Study. 
 }
 \examples{

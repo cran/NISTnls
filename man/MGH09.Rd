@@ -7,26 +7,26 @@
 The \code{MGH09} data frame has 11 rows and 2 columns giving
 }
 \format{
-This data frame contains the following columns:
-}
-\arguments{
+  This data frame contains the following columns:
+  \describe{
     \item{y}{
-	A numeric vector of response values.
+      A numeric vector of response values.
     }
     \item{x}{
-	A numeric vector of input values.
+      A numeric vector of input values.
     }
+  }
 }
 \details{
-This problem was found to be difficult for some very 
-good algorithms.  There is a local minimum at (+inf,
--14.07..., -inf, -inf) with final sum of squares 
-0.00102734....
-
-See More, J. J., Garbow, B. S., and Hillstrom, K. E. 
-(1981).  Testing unconstrained optimization software.
-ACM Transactions on Mathematical Software. 7(1): 
-pp. 17-41.
+  This problem was found to be difficult for some very 
+  good algorithms.  There is a local minimum at (+inf,
+  -14.07..., -inf, -inf) with final sum of squares 
+  0.00102734....
+  
+  See More, J. J., Garbow, B. S., and Hillstrom, K. E. 
+  (1981).  \emph{Testing unconstrained optimization software.}
+    \bold{ACM Transactions on Mathematical Software}. 7(1): 
+    pp. 17--41.
 }
 \source{
 Kowalik, J.S., and M. R. Osborne, (1978).  

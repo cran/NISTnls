@@ -9,16 +9,16 @@ energy radiated from a carbon filament versus the absolute temperature
 of the filament.
 }
 \format{
-This data frame contains the following columns:
-}
-\arguments{
+  This data frame contains the following columns:
+  \describe{
     \item{y}{
-	A numeric vector of the energy radiated from a carbon filament
-	lamp.
+      A numeric vector of the energy radiated from a carbon filament
+      lamp.
     }
     \item{x}{
-	A numeric vector of the temperature of the filament (1000 K).
+      A numeric vector of the temperature of the filament (1000 K).
     }
+  }
 }
 \details{
     These data and model are described in Daniel and Wood

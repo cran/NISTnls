@@ -8,25 +8,25 @@ The \code{Misra1c} data frame has 14 rows and 2 columns.
 This is the same data as \code{Misra1a} but a different model is fit.
 }
 \format{
-This data frame contains the following columns:
-}
-\arguments{
+  This data frame contains the following columns:
+  \describe{
     \item{y}{
-	A numeric vector of volume values.
+      A numeric vector of volume values.
     }
     \item{x}{
-	A numeric vector of pressure values.
+      A numeric vector of pressure values.
     }
+  }
 }
 \details{
-These data are the result of a NIST study regarding
-dental research in monomolecular adsorption.  The
-response variable is volume, and the predictor
-variable is pressure.
+  These data are the result of a NIST study regarding
+  dental research in monomolecular adsorption.  The
+  response variable is volume, and the predictor
+  variable is pressure.
 }
 \source{
-Misra, D., NIST (1978).  
-Dental Research Monomolecular Adsorption Study.
+  Misra, D., NIST (1978).  
+  Dental Research Monomolecular Adsorption Study.
 }
 \examples{
 data(Misra1c)

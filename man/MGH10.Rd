@@ -7,31 +7,31 @@
 The \code{MGH10} data frame has 16 rows and 2 columns.
 }
 \format{
-This data frame contains the following columns:
-}
-\arguments{
+  This data frame contains the following columns:
+  \describe{
     \item{y}{
-	A numeric vector of response values.
+      A numeric vector of response values.
     }
     \item{x}{
-	A numeric vector of input values.
+      A numeric vector of input values.
     }
+  }
 }
 \details{
-This problem was found to be difficult for some very
-good algorithms.
+  This problem was found to be difficult for some very
+  good algorithms.
 
-See More, J. J., Garbow, B. S., and Hillstrom, K. E. 
-(1981).  Testing unconstrained optimization software.
-ACM Transactions on Mathematical Software. 7(1): 
-pp. 17-41.
+  See More, J. J., Garbow, B. S., and Hillstrom, K. E. 
+  (1981).  \emph{Testing unconstrained optimization software.}
+  \bold{ACM Transactions on Mathematical Software.} 7(1): 
+  pp. 17-41.
 }
 \source{
-Meyer, R. R. (1970).  
-Theoretical and computational aspects of nonlinear 
-regression.  In Nonlinear Programming, Rosen, 
-Mangasarian and Ritter (Eds).  
-New York, NY: Academic Press, pp. 465-486.
+  Meyer, R. R. (1970).  
+  Theoretical and computational aspects of nonlinear 
+  regression.  In Nonlinear Programming, Rosen, 
+  Mangasarian and Ritter (Eds).  
+  New York, NY: Academic Press, pp. 465-486.
 }
 \examples{
 data(MGH10)

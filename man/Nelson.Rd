@@ -8,27 +8,27 @@ The \code{Nelson} data frame has 128 rows and 3 columns of data from an
 accelerated test of dialectric breakdown.
 }
 \format{
-This data frame contains the following columns:
-}
-\arguments{
+  This data frame contains the following columns:
+  \describe{
     \item{y}{
-	A numeric vector of dialectric breakdown strength values.
+      A numeric vector of dialectric breakdown strength values.
     }
     \item{x1}{
-	A numeric vector of time values.
+      A numeric vector of time values.
     }
     \item{x2}{
-	A numeric vector of temperature values.
+      A numeric vector of temperature values.
     }
+  }
 }
 \details{
-These data are the result of a study involving
-the analysis of performance degradation data from
-accelerated tests, published in IEEE Transactions
-on Reliability.  The response variable is dialectric
-breakdown strength in kilo-volts, and the predictor
-variables are time in weeks and temperature in degrees
-Celsius.
+  These data are the result of a study involving
+  the analysis of performance degradation data from
+  accelerated tests, published in IEEE Transactions
+  on Reliability.  The response variable is dialectric
+  breakdown strength in kilo-volts, and the predictor
+  variables are time in weeks and temperature in degrees
+  Celsius.
 }
 \source{
 Nelson, W. (1981).  

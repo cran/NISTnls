@@ -8,21 +8,21 @@ The \code{Eckerle4} data frame has 35 rows and 2 columns giving
 transmittance as a function of wavelength.
 }
 \format{
-This data frame contains the following columns:
-}
-\arguments{
+  This data frame contains the following columns:
+  \describe{
     \item{y}{
-	A numeric vector of transmittance values.
+      A numeric vector of transmittance values.
     }
     \item{x}{
-	A numeric vector of wavelengths.
+      A numeric vector of wavelengths.
     }
+  }
 }
 \details{
-These data are the result of a NIST study involving
-circular interference transmittance.  The response
-variable is transmittance, and the predictor variable
-is wavelength.
+  These data are the result of a NIST study involving
+  circular interference transmittance.  The response
+  variable is transmittance, and the predictor variable
+  is wavelength.
 }
 \source{
 Eckerle, K., NIST (197?).  

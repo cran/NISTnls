@@ -8,15 +8,15 @@ The \code{Roszman1} data frame has 25 rows and 2 columns of data on the
 number of quantum defects in iodine atoms at different energy states.
 }
 \format{
-This data frame contains the following columns:
-}
-\arguments{
+  This data frame contains the following columns:
+  \describe{
     \item{y}{
-	A numeric vector of number of quantum defects.
+      A numeric vector of number of quantum defects.
     }
     \item{x}{
-	A numeric vector of the excited energy state.
+      A numeric vector of the excited energy state.
     }
+  }
 }
 \details{
 These data are the result of a NIST study involving

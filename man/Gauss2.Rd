@@ -7,15 +7,15 @@
 The \code{Gauss2} data frame has 250 rows and 2 columns giving
 }
 \format{
-This data frame contains the following columns:
-}
-\arguments{
+  This data frame contains the following columns:
+  \describe{
     \item{y}{
-	A numeric vector of generated response values.
+      A numeric vector of generated response values.
     }
     \item{x}{
-	A numeric vector of generated input values.
+      A numeric vector of generated input values.
     }
+  }
 }
 \details{
     The data are two slightly-blended Gaussians on a 

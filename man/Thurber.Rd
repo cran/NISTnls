@@ -7,25 +7,25 @@
 The \code{Thurber} data frame has 37 rows and 2 columns.
 }
 \format{
-This data frame contains the following columns:
-}
-\arguments{
+  This data frame contains the following columns:
+  \describe{
     \item{y}{
-	A numeric vector of electron mobility values.
+      A numeric vector of electron mobility values.
     }
     \item{x}{
-	A numeric vector of logs of electron density values.
+      A numeric vector of logs of electron density values.
     }
+  }
 }
 \details{
-These data are the result of a NIST study involving
-semiconductor electron mobility.  The response 
-variable is a measure of electron mobility, and the 
-predictor variable is the natural log of the density.
+  These data are the result of a NIST study involving
+  semiconductor electron mobility.  The response 
+  variable is a measure of electron mobility, and the 
+  predictor variable is the natural log of the density.
 }
 \source{
-Thurber, R., NIST (197?).  
-Semiconductor electron mobility modeling.
+  Thurber, R., NIST (197?).  
+  Semiconductor electron mobility modeling.
 }
 \examples{
 data(Thurber)
@@ -47,4 +47,3 @@ fm4 <- nls(y ~ outer(x, 0:3, "^")/(1+x*(b5+x*(b6+x*b7))),
 fm4
 }
 \keyword{datasets}
-

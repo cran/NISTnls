@@ -8,16 +8,16 @@ The \code{ENSO} data frame has 168 rows and 2 columns giving atmospheric
 pressure differences over time.
 }
 \format{
-This data frame contains the following columns:
-}
-\arguments{
+  This data frame contains the following columns:
+  \describe{
     \item{y}{
-	A numeric vector of monthly averaged atmospheric pressure
-	differences between Easter Island and Darwin, Australia.
+      A numeric vector of monthly averaged atmospheric pressure
+      differences between Easter Island and Darwin, Australia.
     }
     \item{x}{
-	A numeric vector of time values.
+      A numeric vector of time values.
     }
+  }
 }
 \details{
     The data are monthly averaged atmospheric pressure 

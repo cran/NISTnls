@@ -8,15 +8,15 @@ The \code{Kirby2} data frame has 151 rows and 2 columns of data from an
 NIST study on scanning electron microscope line width standards.
 }
 \format{
-This data frame contains the following columns:
-}
-\arguments{
+  This data frame contains the following columns:
+  \describe{
     \item{y}{
-	A numeric vector of response values.
+      A numeric vector of response values.
     }
     \item{x}{
-	A numeric vector of input values.
+      A numeric vector of input values.
     }
+  }
 }
 \details{
 These data are the result of a NIST study involving

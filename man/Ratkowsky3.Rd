@@ -7,15 +7,15 @@
 The \code{Ratkowsky3} data frame has 15 rows and 2 columns.
 }
 \format{
-This data frame contains the following columns:
-}
-\arguments{
+  This data frame contains the following columns:
+  \describe{
     \item{y}{
-	A numeric vector of dry weights of onion bulbs and tops.
+      A numeric vector of dry weights of onion bulbs and tops.
     }
     \item{x}{
-	A numeric vector of growing times.
+      A numeric vector of growing times.
     }
+  }
 }
 \details{
 This model and data are an example of fitting  

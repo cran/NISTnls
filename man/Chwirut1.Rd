@@ -4,27 +4,27 @@
 \non_function{}
 \title{Ultrasonic calibration study 1}
 \description{
-The \code{Chwirut1} data frame has 214 rows and 2 columns giving
+  The \code{Chwirut1} data frame has 214 rows and 2 columns giving
 }
 \format{
-This data frame contains the following columns:
-}
-\arguments{
+  This data frame contains the following columns:
+  \describe{
     \item{y}{
-	A numeric vector of ultrasonic response values
+      A numeric vector of ultrasonic response values
     }
     \item{x}{
-	A numeric vector or metal distance values
+      A numeric vector or metal distance values
     }
+  }
 }
 \details{
-These data are the result of a NIST study involving
-ultrasonic calibration.  The response variable is
-ultrasonic response, and the predictor variable is
-metal distance.
+  These data are the result of a NIST study involving
+  ultrasonic calibration.  The response variable is
+  ultrasonic response, and the predictor variable is
+  metal distance.
 }
 \source{
-Chwirut, D., NIST (197?).   Ultrasonic Reference Block Study. 
+  Chwirut, D., NIST (197?).   Ultrasonic Reference Block Study. 
 }
 \examples{
 data(Chwirut1)
