@@ -1,8 +1,11 @@
-2004-04-18  Douglas Bates  <bates@stat.wisc.edu>
+2004-10-03  Douglas Bates  <bates@bates1-home>
 
-	* DESCRIPTION (Depends): Release 0.9-8, change dependencies
+	* inst/original/Bennett5.dat: Move the original pages to an inst
+	directory.
 
-	* R/zzz.R: Change require(nls) to require(stats) for R >= 1.9.0
+	* R/zzz.R (.onLoad): Change to require(stats) and put in .onLoad
+
+	* DESCRIPTION (LazyData): Added
 
 2003-07-22  Douglas Bates  <bates@stat.wisc.edu>
 
