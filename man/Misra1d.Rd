@@ -29,15 +29,19 @@ Misra, D., NIST (1978).
 Dental Research Monomolecular Adsorption Study.
 }
 \examples{
-data(Misra1d)
+Try <- function(expr) if (!inherits(val <- try(expr), "try-error")) val
 plot(y ~ x, data = Misra1d)
-fm1 <- nls(y ~ b1*b2*x*((1+b2*x)**(-1)), data = Misra1d, trace = TRUE,
-           start = c(b1 = 500, b2 = 0.0001) )
-fm2 <- nls(y ~ b1*b2*x*((1+b2*x)**(-1)), data = Misra1d, trace = TRUE,
-           start = c(b1 = 450, b2 = 0.0003) )
-fm3 <- nls(y ~ b2*x*((1+b2*x)**(-1)), data = Misra1d, trace = TRUE,
-           start = c(b2 = 0.0001), algorithm = "plinear" )
-fm4 <- nls(y ~ b2*x*((1+b2*x)**(-1)), data = Misra1d, trace = TRUE,
-           start = c(b2 = 0.0005), algorithm = "plinear" )
+Try(fm1 <- nls(y ~ b1*b2*x*((1+b2*x)**(-1)), data = Misra1d, trace = TRUE,
+           start = c(b1 = 500, b2 = 0.0001) ))
+Try(fm1a <- nls(y ~ b1*b2*x*((1+b2*x)**(-1)), data = Misra1d, trace = TRUE,
+           alg = "port", start = c(b1 = 500, b2 = 0.0001) ))
+Try(fm2 <- nls(y ~ b1*b2*x*((1+b2*x)**(-1)), data = Misra1d, trace = TRUE,
+           start = c(b1 = 450, b2 = 0.0003) ))
+Try(fm2a <- nls(y ~ b1*b2*x*((1+b2*x)**(-1)), data = Misra1d, trace = TRUE,
+           alg = "port", start = c(b1 = 450, b2 = 0.0003) ))
+Try(fm3 <- nls(y ~ b2*x*((1+b2*x)**(-1)), data = Misra1d, trace = TRUE,
+           start = c(b2 = 0.0001), algorithm = "plinear" ))
+Try(fm4 <- nls(y ~ b2*x*((1+b2*x)**(-1)), data = Misra1d, trace = TRUE,
+           start = c(b2 = 0.0005), algorithm = "plinear" ))
 }
 \keyword{datasets}
